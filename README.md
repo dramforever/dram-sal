@@ -9,6 +9,7 @@ Completed
 | Filename | Problem | Main Algorithm/Data Structure used |
 | -------- | ------- | ---------------------------------- |
 | chair-tree.cpp | POJ 2104 | Shared-Node Segment Trees |
+| splay.cpp | HDU 3487 | Splay Trees |
 
 To be collected
 ---------------
@@ -21,7 +22,6 @@ To be collected
 Todo
 ------
 
-- Splay trees
 - Link-cut trees
 
 License
