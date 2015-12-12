@@ -10,6 +10,7 @@ Completed
 | -------- | ------- | ---------------------------------- |
 | chair-tree.cpp | POJ 2104 | Shared-Node Segment Trees |
 | splay.cpp | HDU 3487 | Splay Trees |
+| lct.cpp | HDU 2475 | Link/cut Trees |
 
 To be collected
 ---------------
@@ -18,11 +19,6 @@ To be collected
 | -------- | ------- | ---------------------------------- |
 | spfa.cpp | LG T577 | SPFA |
 | manager.cpp | LG P2146 | Heavy Light Decomposition |
-
-Todo
-------
-
-- Link-cut trees
 
 License
 -------
