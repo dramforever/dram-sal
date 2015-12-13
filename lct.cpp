@@ -21,8 +21,13 @@ inline void rotate(int x)
 inline void splay(int x)
 {
   for(; x[parent] > 0; rotate(x))
-    if(x[parent][parent] > 0 && flag(x) == flag(x[parent]))
-      rotate(x[parent]);
+    if(x[parent][parent] > 0)
+      {
+	if(flag(x) == flag(x[parent]))
+	  rotate(x[parent]);
+	else
+	  rotate(x);
+      }
 }
 
 inline void access(int x)
