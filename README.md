@@ -12,6 +12,7 @@ Completed
 | splay.cpp | HDU 3487 | Splay Trees |
 | lct.cpp | HDU 2475 | Link/cut Trees |
 | sa.cpp | BZOJ 1031 | Suffix Array |
+| treap.cpp | BZOJ 1588 | No-rotate Treap |
 
 To be collected
 ---------------
