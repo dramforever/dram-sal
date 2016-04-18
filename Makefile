@@ -1,1 +1,0 @@
-CXXFLAGS=-Wall -g -DLOCAL

@@ -3,6 +3,28 @@ dram-sal
 
 A library of solutions to programming problems
 
+Hierarchy of files
+------------------
+
+- `data`
+  - `problem-name`
+    - `test-case-name.in`
+    - `test-case-name.out`
+- `src`
+  - `problem-name.cpp`
+
+How to test
+-----------
+
+```
+cd path/to/repo
+mkdir build
+cd build
+cmake ..
+make
+ctest
+```
+
 Completed
 ---------
 
