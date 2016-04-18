@@ -28,13 +28,14 @@ ctest
 Completed
 ---------
 
-| Filename | Problem | Main Algorithm/Data Structure used |
-| -------- | ------- | ---------------------------------- |
-| chair-tree.cpp | POJ 2104 | Shared-Node Segment Trees |
-| splay.cpp | HDU 3487 | Splay Trees |
-| lct.cpp | HDU 2475 | Link/cut Trees |
-| sa.cpp | BZOJ 1031 | Suffix Array |
-| treap.cpp | BZOJ 1588 | No-rotate Treap |
+| Problem name | Source | Main Algorithm/Data Structure used |
+| ------------ | ------ | ---------------------------------- |
+| chair-tree | POJ 2104 | Shared-Node Segment Trees |
+| splay | HDU 3487 | Splay Trees |
+| lct | HDU 2475 | Link/cut Trees |
+| sa | BZOJ 1031 | Suffix Array |
+| treap | BZOJ 1588 | No-rotate Treap |
+| dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
 
 To be collected
 ---------------
