@@ -21,9 +21,11 @@ python $4 <$3 >${FILTERED_STD}
 if diff -u ${FILTERED_STD} ${FILTERED_OUT}; then
     rm ${OUTPUT}
     rm ${FILTERED_OUT}
+    rm ${FILTERED_STD}
 else
     echo "* Output incorrect"
     rm ${OUTPUT}
     rm ${FILTERED_OUT}
+    rm ${FILTERED_STD}
     exit 1
 fi
