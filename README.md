@@ -36,6 +36,7 @@ Completed
 | sa | BZOJ 1031 | Suffix Array |
 | treap | BZOJ 1588 | No-rotate Treap |
 | dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
+| state_dp | POJ 1185 | State Compressed Dynamic Programming |
 
 To be collected
 ---------------
