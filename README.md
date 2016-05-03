@@ -37,6 +37,7 @@ Completed
 | treap | BZOJ 1588 | No-rotate Treap |
 | dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
 | state_dp | POJ 1185 | State Compressed Dynamic Programming |
+| fft | UOJ 34 | FFT-based Polynominal Multiplication |
 
 To be collected
 ---------------
