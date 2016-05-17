@@ -33,7 +33,7 @@ Completed
 | chair-tree | POJ 2104 | Shared-Node Segment Trees |
 | splay | HDU 3487 | Splay Trees |
 | lct | HDU 2475 | Link/cut Trees |
-| sa | BZOJ 1031 | Suffix Array |
+| sa | UOJ 35 | Suffix Array |
 | treap | BZOJ 1588 | No-rotate Treap |
 | dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
 | state_dp | POJ 1185 | State Compressed Dynamic Programming |
