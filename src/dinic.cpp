@@ -16,7 +16,7 @@ void Edge(int from, int to, int cap) {
 	pA->next = H[from];
 	H[from] = pA;
 	pA->rev = re;
-	
+
 	re->dst = from;
 	re->flow = 0;
 	re->next = H[to];
@@ -39,7 +39,7 @@ bool makelevel() {
 				Level[p->dst] = Level[i] + 1;
 				Q.push(p->dst);
 			}
-		if(Level[numnodes] > 0)	
+		if(Level[numnodes] > 0)
 			return true;
 	}
 	return false;
@@ -57,7 +57,7 @@ int Find(int frx, int mxx) {
 				p->rev->flow += t;
 			}
 		}
-		
+
 	}
 	if(!sum) Level[frx] = -1;
 	return sum;
@@ -80,7 +80,6 @@ int main() {
 			Edge(x, y, c);
 		}
 		printf("%d\n", Wx());
-		
+
 	}
 }
-

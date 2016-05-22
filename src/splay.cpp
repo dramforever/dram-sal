@@ -26,9 +26,9 @@ struct Splay
 	if(c[1]) c[1]->lazy ^= 1;
       }
   }
-  
+
   inline int flag() { return parent->c[1] == this; }
-  
+
   inline void rotate()
   {
     int k = flag();
@@ -54,7 +54,7 @@ struct Splay
   Splay* find(int pos)
   {
     Splay *x = this;
-    
+
     x->pass();
 
     while(pos != MS(x->c[0]))
@@ -125,7 +125,7 @@ int main()
 	  else 			// FLIP
 	    FLIP(a, b);
 	}
-      
+
       for(int i = 1; i <= N; i ++)
 	{
 	  root = root->find(i);

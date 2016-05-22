@@ -21,7 +21,7 @@ inline S* alloc(S *l, S *r, int s)
 S* insert(S *x, int lb, int rb, int pos)
 {
     x = x ? alloc(x->lc, x->rc, x->val) : alloc(0, 0, 0);
-    
+
     if(lb != rb)
     {
         int mid = (lb + rb) >> 1;
@@ -29,9 +29,9 @@ S* insert(S *x, int lb, int rb, int pos)
              x->lc = insert(x->lc, lb, mid, pos);
         else x->rc = insert(x->rc, mid+1, rb, pos);
     }
-    
+
     x->val ++;
-    
+
     return x;
 }
 
@@ -40,7 +40,7 @@ inline int query(S *x, S *y, int lb, int rb, int k)
     while(lb != rb)
     {
         int mid = (lb + rb) >> 1;
-        
+
 #define lcv(x) ((x) ? ((x)->lc ? (x)->lc->val : 0): 0)
         int t = lcv(x) - lcv(y);
 #undef lcv
@@ -57,7 +57,7 @@ int A[MAXN], N, inl[MAXN], rec[MAXN], maxval, pcb[MAXN];
 inline void prepare()
 {
     for(int i = 1; i <= N; i ++)
-        root[i] = insert(root[i-1], 1, maxval, inl[i]);   
+        root[i] = insert(root[i-1], 1, maxval, inl[i]);
 }
 
 inline bool cmp(int i, int j)
@@ -67,7 +67,7 @@ inline void lower()
 {
     for(int i = 1; i <= N; i ++) rec[i] = i;
     sort(rec+1, rec+N+1, cmp);
-    
+
     int last = A[rec[1]] - 1;
     for(int i = 1; i <= N; i ++)
     {
@@ -87,13 +87,13 @@ int main()
         scanf("%d", A+i);
     lower();
     prepare();
-    
+
     for(int i = 1; i <= Q; i ++)
     {
         int a, b, k;
         scanf("%d%d%d", &a, &b, &k);
         printf("%d\n", pcb[query(root[b], root[a-1], 1, maxval, k)]);
     }
-    
+
     return 0;
 }

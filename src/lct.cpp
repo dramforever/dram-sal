@@ -39,7 +39,7 @@ inline void access(int x)
       x[c][1][parent] = -x;
       x[c][1] = 0;
     }
-  
+
   while(x[parent] < 0)
     {
       int w = -x[parent];
@@ -64,7 +64,7 @@ int QUERY(int x)
 void MOVE(int i, int j)
 {
   if(i == j) return;
-  
+
   if(j)
     {
       access(j);
@@ -75,7 +75,7 @@ void MOVE(int i, int j)
 
   access(i);
   splay(i);
-  
+
   if(i[c][0]) i[c][0][parent] = 0, i[c][0] = 0;
 
   if(j)
@@ -95,14 +95,14 @@ int main()
     {
       if(flag) puts("");
       else flag = true;
-      
+
       for(int i = 1; i <= N; i ++)
 	{
 	  scanf("%d", &parent[i]);
 	  parent[i] = -parent[i];
 	  i[c][0] = i[c][1] = 0;
 	}
-      
+
       int Q;
       scanf("%d", &Q);
       while(Q --)
