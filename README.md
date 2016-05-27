@@ -40,6 +40,13 @@ Completed
 | fft | UOJ 34 | FFT-based Polynomial Multiplication |
 | ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
 
+Work in progress
+----------------
+
+| Problem name | Source | Main Algorithm/Data Structure used |
+| ------------ | ------ | ---------------------------------- |
+| machine | UOJ 35 | Suffix Array from Suffix Automaton |
+
 To be collected
 ---------------
 
