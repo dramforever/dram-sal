@@ -28,6 +28,8 @@ ctest
 Completed
 ---------
 
+Algorithm Templates
+
 | Problem name | Source | Main Algorithm/Data Structure used |
 | ------------ | ------ | ---------------------------------- |
 | chair-tree | POJ 2104 | Shared-Node Segment Trees |
@@ -39,6 +41,12 @@ Completed
 | state_dp | POJ 1185 | State Compressed Dynamic Programming |
 | fft | UOJ 34 | FFT-based Polynomial Multiplication |
 | ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
+
+Others
+
+| Problem name |
+| ------------ |
+| _bzoj_3065 |
 
 Work in progress
 ----------------
