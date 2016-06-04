@@ -48,6 +48,7 @@ Others
 | Problem name |
 | ------------ |
 | _bzoj_3065 |
+| _bzoj_4571 |
 
 To be collected
 ---------------
