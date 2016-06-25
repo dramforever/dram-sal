@@ -52,6 +52,12 @@ Others
 | _bzoj_3065 |
 | _bzoj_4571 |
 
+Work In Progress
+
+| Problem name | Source | Current Score |
+| ------------ | ------ | ------------- |
+| king | UOJ 166 | 27 |
+
 To be collected
 ---------------
 
