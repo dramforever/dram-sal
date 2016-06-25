@@ -12,6 +12,8 @@ Hierarchy of files
     - `test-case-name.out`
 - `src`
   - `problem-name.cpp`
+- `misc`
+  - `misc-snippet.cpp`
 
 How to test
 -----------
