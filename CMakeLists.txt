@@ -11,7 +11,7 @@ FILE(GLOB snippets RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/src"
 FOREACH (sp ${snippets})
     STRING(REGEX REPLACE ".cpp" "" sp "${sp}")
     MESSAGE(STATUS "Found ${sp}")
-    IF (${sp} STREQUAL "king")
+    IF (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data/${sp}/grader.cpp")
         ADD_EXECUTABLE(${sp} src/${sp}.cpp data/${sp}/grader.cpp)
         SET_SOURCE_FILES_PROPERTIES(src/${sp}.cpp PROPERTIES COMPILE_FLAGS -I${CMAKE_CURRENT_SOURCE_DIR}/data/${sp})
     ELSE ()
