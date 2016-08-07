@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// {{{ Reading
+
 char *buf;
 
 inline void read_all() {
@@ -18,6 +20,9 @@ inline void get(int &x) {
     x = (int) strtol(buf, &buf, 0);
 }
 
+// }}}
+
+// {{{ Data & types
 const int __ = 166666, inf = (int) 1e9;
 
 int n, m, maxn[__], val[__], par[__], c[__][2], rev[__];
@@ -29,78 +34,97 @@ struct Edge {
 bool operator<(const Edge &x, const Edge &y) {
     return x.a < y.a;
 }
+// }}}
+
+// {{{ Union-find
 
 int ulink[__];
 
 int ufind(int x) {
     int root;
-    for (root = x; ulink[root]; root = ulink[root]);
-    for (int k; ulink[x]; k = ulink[x], ulink[x] = root, x = k);
+    for (root = x; root[ulink]; root = root[ulink]);
+    for (int k; x[ulink]; k = x[ulink], x[ulink] = root, x = k);
     return root;
 }
+// }}}
 
+// {{{ Utilities
 bool is_sp(int x) {
-    return c[par[x]][0] == x || c[par[x]][1] == x;
+    return x[par][c][0] == x || x[par][c][1] == x;
 }
 
-void update(int x) {
-    maxn[x] = x;
-    if (val[maxn[c[x][0]]] > val[maxn[x]])
-        maxn[x] = maxn[c[x][0]];
-    if (val[maxn[c[x][1]]] > val[maxn[x]])
-        maxn[x] = maxn[c[x][1]];
+int flag(int x) {
+    return x[par][c][1] == x;
+}
+
+Edge get_edge() {
+    Edge x;
+    get(x.u);
+    get(x.v);
+    get(x.a);
+    get(x.b);
+    return x;
+}
+
+// }}}
+
+// {{{ Splay
+
+void update(int x) { 
+    x[maxn] = x;
+    if (x[c][0][maxn][val] > x[maxn][val]) maxn[x] = maxn[c[x][0]];
+    if (x[c][1][maxn][val] > x[maxn][val]) maxn[x] = maxn[c[x][1]];
 }
 
 void pass(int x) {
-    if (rev[x]) {
-        swap(c[x][0], c[x][1]);
-        rev[c[x][0]] = ! rev[c[x][0]];
-        rev[c[x][1]] = ! rev[c[x][1]];
-        rev[x] = 0;
+    if (x[rev]) {
+        swap(x[c][0], x[c][1]);
+        x[c][0][rev] ^= 1;
+        x[c][1][rev] ^= 1;
+        x[rev] = 0;
     }
 }
 
 void pass_all(int x) {
-    if (is_sp(x)) pass_all(par[x]);
+    if (is_sp(x)) pass_all(x[par]);
     pass(x);
 }
 
-int flag(int x) {
-    return c[par[x]][1] == x;
-}
-
 void rotate(int x) {
-    int k = flag(x), p = par[x], g = par[p], r = c[x][! k];
+    int k = flag(x), p = x[par], g = p[par], r = x[c][! k];
 
-    if (is_sp(p)) c[g][flag(p)] = x;
-    par[x] = g;
-    c[x][! k] = p;
-    par[p] = x;
-    c[p][k] = r;
-    if (r) par[r] = p;
+    if (is_sp(p)) g[c][flag(p)] = x;
+    x[par] = g;
+    x[c][! k] = p;
+    p[par] = x;
+    p[c][k] = r;
+    if (r) r[par] = p;
     update(p);
 }
 
 void splay(int x) {
     pass_all(x);
     for (; is_sp(x); rotate(x))
-        if (is_sp(par[x])) {
-            if (flag(x) == flag(par[x]))
-                rotate(par[x]);
+        if (is_sp(x[par])) {
+            if (flag(x) == flag(x[par]))
+                rotate(x[par]);
             else
                 rotate(x);
         }
     update(x);
 }
 
+// }}}
+
+// {{{ Link/cut tree
 void access(int x) {
     splay(x);
-    c[x][1] = 0;
+    x[c][1] = 0;
     update(x);
-    if (par[x]) {
-        access(par[x]);
-        c[par[x]][1] = x;
-        update(par[x]);
+    if (x[par]) {
+        access(x[par]);
+        x[par][c][1] = x;
+        update(x[par]);
         rotate(x);
     }
 }
@@ -108,12 +132,12 @@ void access(int x) {
 void make_root(int x) {
     access(x);
     splay(x);
-    rev[x] = ! rev[x];
+    x[rev] ^= 1;
 }
 
 void link(int x, int y) {
     make_root(x);
-    par[x] = y;
+    x[par] = y;
 }
 
 void cut(int x, int y) {
@@ -129,15 +153,9 @@ int query(int x, int y) {
     splay(y);
     return maxn[y];
 }
+// }}}
 
-Edge get_edge() {
-    Edge x;
-    get(x.u);
-    get(x.v);
-    get(x.a);
-    get(x.b);
-    return x;
-}
+// {{{ Main
 
 int main() {
     read_all();
@@ -175,3 +193,7 @@ int main() {
     printf("%d\n", ans == inf ? - 1 : ans);
     return 0;
 }
+
+// }}}
+
+// vim: sw=4 ts=4 et
