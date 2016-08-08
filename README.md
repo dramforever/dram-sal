@@ -49,8 +49,8 @@ Others
 
 | Problem name |
 | ------------ |
-| _bzoj_3065 |
-| _bzoj_4571 |
+| bzoj_3065 |
+| bzoj_4571 |
 
 Work In Progress
 
