@@ -51,6 +51,7 @@ Others
 | ------------ |
 | bzoj_3065 |
 | bzoj_4571 |
+| bzoj_1001 |
 
 Work In Progress
 
