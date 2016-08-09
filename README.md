@@ -44,6 +44,7 @@ Algorithm Templates
 | fft | UOJ 34 | FFT-based Polynomial Multiplication |
 | ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
 | machine | UOJ 35 | Suffix Array from Suffix Automaton |
+| bip-match | UOJ 78 | Bipartite graph matching with Dinic |
 
 Others
 
