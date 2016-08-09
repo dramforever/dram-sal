@@ -100,6 +100,7 @@ void rotate(int x) {
     p[c][k] = r;
     if (r) r[par] = p;
     update(p);
+    update(x);
 }
 
 void splay(int x) {
@@ -111,7 +112,6 @@ void splay(int x) {
             else
                 rotate(x);
         }
-    update(x);
 }
 
 // }}}
@@ -131,7 +131,6 @@ void access(int x) {
 
 void make_root(int x) {
     access(x);
-    splay(x);
     x[rev] ^= 1;
 }
 
@@ -143,14 +142,12 @@ void link(int x, int y) {
 void cut(int x, int y) {
     make_root(x);
     access(y);
-    splay(y);
     c[y][0] = par[x] = 0;
 }
 
 int query(int x, int y) {
     make_root(x);
     access(y);
-    splay(y);
     return maxn[y];
 }
 // }}}
