@@ -30,14 +30,11 @@ ctest
 Completed
 ---------
 
+### Algorithm templates
+
 | Problem name | Source | Main Algorithm/Data Structure used |
 | ------------ | ------ | ---------------------------------- |
 | bip-match | UOJ 78 | Bipartite graph matching with Dinic |
-| bzoj_1001 | | Planar Graph Min-Cut by Shortest Path |
-| bzoj_2132 | | Min-Cut |
-| bzoj_4516 | | Suffix Automaton |
-| bzoj_4569 | | Union/find Sets |
-| bzoj_4571 | | Chair Trees |
 | chair-tree | POJ 2104 | Shared-Node Segment Trees |
 | dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
 | fft | UOJ 34 | FFT-based Polynomial Multiplication |
@@ -48,6 +45,17 @@ Completed
 | splay | HDU 3487 | Splay Trees |
 | state_dp | POJ 1185 | State Compressed Dynamic Programming |
 | treap | BZOJ 1588 | No-rotate Treap |
+
+### Other
+
+| Problem | Algorithm used |
+| ------- | -------------- |
+| bzoj_1001 | Planar Graph Min-Cut by Shortest Path |
+| bzoj_1003 | Shortest Path, Dynamic Programming |
+| bzoj_2132 | Min-Cut |
+| bzoj_4516 | Suffix Automaton |
+| bzoj_4569 | Union/find Sets |
+| bzoj_4571 | Chair Trees |
 
 License
 -------
