@@ -45,15 +45,11 @@ Algorithm Templates
 | ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
 | machine | UOJ 35 | Suffix Array from Suffix Automaton |
 | bip-match | UOJ 78 | Bipartite graph matching with Dinic |
-
-Others
-
-| Problem name |
-| ------------ |
-| bzoj_3065 |
-| bzoj_4571 |
-| bzoj_1001 |
-| bzoj_2132 |
+| bzoj_4569 | | Union/find Sets |
+| bzoj_4571 | | Chair Trees |
+| bzoj_1001 | | Planar Graph Min-Cut by Shortest Path |
+| bzoj_2132 | | Min-Cut |
+| bzoj_4516 | | Suffix Automaton |
 
 Work In Progress
 
