@@ -43,7 +43,6 @@ Completed
 | ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
 | sa | UOJ 35 | Suffix Array |
 | splay | HDU 3487 | Splay Trees |
-| state_dp | POJ 1185 | State Compressed Dynamic Programming |
 | treap | BZOJ 1588 | No-rotate Treap |
 
 ### Other
@@ -56,6 +55,7 @@ Completed
 | bzoj_4516 | Suffix Automaton |
 | bzoj_4569 | Union/find Sets |
 | bzoj_4571 | Chair Trees |
+| poj_1185 | POJ 1185 | State Compressed Dynamic Programming |
 
 License
 -------
