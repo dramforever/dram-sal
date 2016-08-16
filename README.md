@@ -30,40 +30,24 @@ ctest
 Completed
 ---------
 
-Algorithm Templates
-
 | Problem name | Source | Main Algorithm/Data Structure used |
 | ------------ | ------ | ---------------------------------- |
-| chair-tree | POJ 2104 | Shared-Node Segment Trees |
-| splay | HDU 3487 | Splay Trees |
-| lct | HDU 2475 | Link/cut Trees |
-| sa | UOJ 35 | Suffix Array |
-| treap | BZOJ 1588 | No-rotate Treap |
-| dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
-| state_dp | POJ 1185 | State Compressed Dynamic Programming |
-| fft | UOJ 34 | FFT-based Polynomial Multiplication |
-| ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
-| machine | UOJ 35 | Suffix Array from Suffix Automaton |
 | bip-match | UOJ 78 | Bipartite graph matching with Dinic |
-| bzoj_4569 | | Union/find Sets |
-| bzoj_4571 | | Chair Trees |
 | bzoj_1001 | | Planar Graph Min-Cut by Shortest Path |
 | bzoj_2132 | | Min-Cut |
 | bzoj_4516 | | Suffix Automaton |
-
-Work In Progress
-
-| Problem name | Source | Current Score |
-| ------------ | ------ | ------------- |
-| king | UOJ 166 | 27 |
-
-To be collected
----------------
-
-| Filename | Problem | Main Algorithm/Data Structure used |
-| -------- | ------- | ---------------------------------- |
-| spfa.cpp | LG T577 | SPFA |
-| manager.cpp | LG P2146 | Heavy Light Decomposition |
+| bzoj_4569 | | Union/find Sets |
+| bzoj_4571 | | Chair Trees |
+| chair-tree | POJ 2104 | Shared-Node Segment Trees |
+| dinic | POJ 1273 | Dinic Algorithm (Max-Flow) |
+| fft | UOJ 34 | FFT-based Polynomial Multiplication |
+| lct | HDU 2475 | Link/cut Trees |
+| machine | UOJ 35 | Suffix Array from Suffix Automaton |
+| ntt | UOJ 34 | NTT-based (modulo FFT) Polynomial Multiplication |
+| sa | UOJ 35 | Suffix Array |
+| splay | HDU 3487 | Splay Trees |
+| state_dp | POJ 1185 | State Compressed Dynamic Programming |
+| treap | BZOJ 1588 | No-rotate Treap |
 
 License
 -------
