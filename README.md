@@ -52,6 +52,7 @@ Completed
 | bzoj_1001 | Planar Graph Min-Cut by Shortest Path |
 | bzoj_1003 | Shortest Path, Dynamic Programming |
 | bzoj_2132 | Min-Cut |
+| bzoj_2588 | Chair Trees, Repeated Doubling LCA |
 | bzoj_4516 | Suffix Automaton |
 | bzoj_4569 | Union/find Sets |
 | bzoj_4571 | Chair Trees |
