@@ -1,4 +1,4 @@
-dram-sal
+dram-sal ![travis-ci](https://api.travis-ci.org/dramforever/dram-sal.svg)
 ========
 
 A library of solutions to programming problems
