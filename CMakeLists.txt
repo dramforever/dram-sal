@@ -3,7 +3,15 @@ PROJECT(dram_sal)
 
 ENABLE_TESTING()
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g -DLOCAL")
+IF ("${OPTIMIZE}")
+    SET (EXTRA_FLAGS "-O2")
+    MESSAGE (STATUS "Compiling with optimizations")
+ELSE ()
+    SET (EXTRA_FLAGS "-g")
+    MESSAGE (STATUS "Compiling with debugging info")
+ENDIF ()
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall ${EXTRA_FLAGS} -DLOCAL")
 
 FILE(GLOB snippets RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/src"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")

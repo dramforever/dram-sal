@@ -1,0 +1,7 @@
+sudo: false
+language: cpp
+script: bash ./test-me.sh
+
+env:
+  - OPTIMIZE=0
+  - OPTIMIZE=1
