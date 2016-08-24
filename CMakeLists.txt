@@ -7,7 +7,7 @@ IF ("${OPTIMIZE}")
     SET (EXTRA_FLAGS "-O2")
     MESSAGE (STATUS "Compiling with optimizations")
 ELSE ()
-    SET (EXTRA_FLAGS "-g -fsanitize=address")
+    SET (EXTRA_FLAGS "-g")
     MESSAGE (STATUS "Compiling with debugging info")
 ENDIF ()
 
