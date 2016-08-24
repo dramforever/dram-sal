@@ -49,16 +49,17 @@ Completed
 
 | Problem | Algorithm used |
 | ------- | -------------- |
-| bzoj_1001 | Planar Graph Min-Cut by Shortest Path |
-| bzoj_1003 | Shortest Path, Dynamic Programming |
-| bzoj_2132 | Min-Cut |
-| bzoj_2588 | Chair Trees, Repeated Doubling LCA |
-| bzoj_4516 | Suffix Automaton |
-| bzoj_4569 | Union/find Sets |
-| bzoj_4571 | Chair Trees |
-| bzoj_3673 | Union/find Sets over Binary Tree based Persistent Arrays |
-| bzoj_3673 | Union/find Sets over Binary Tree based Persistent Arrays |
-| poj_1185 | POJ 1185 | State Compressed Dynamic Programming |
+| bzoj\_1001 | Planar Graph Min-Cut by Shortest Path |
+| bzoj\_1003 | Shortest Path, Dynamic Programming |
+| bzoj\_1012\_sgt | Segment Trees |
+| bzoj\_2132 | Min-Cut |
+| bzoj\_2588 | Chair Trees, Repeated Doubling LCA |
+| bzoj\_3673 | Union/find Sets over Binary Tree based Persistent Arrays |
+| bzoj\_3673 | Union/find Sets over Binary Tree based Persistent Arrays |
+| bzoj\_4516 | Suffix Automaton |
+| bzoj\_4569 | Union/find Sets |
+| bzoj\_4571 | Chair Trees |
+| poj\_1185 | POJ 1185 | State Compressed Dynamic Programming |
 
 License
 -------
