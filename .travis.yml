@@ -1,10 +1,7 @@
 sudo: false
 language: cpp
+python: "2.7"
 script: bash ./test-me.sh
 env:
   - OPTIMIZE=0
   - OPTIMIZE=1
-addons:
-  apt:
-    packages:
-      - python3
