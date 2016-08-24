@@ -37,8 +37,6 @@ def testing(*progs):
         for i in range(NUM_TESTS):
             outs = defaultdict(list)
             inp = func()
-            with open('out.txt', 'w') as f:
-                f.write(inp)
             for prog_name in progs:
                 pre_output = runner(prog_name, inp)
                 if pre_output is None:
