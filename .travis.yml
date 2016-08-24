@@ -4,3 +4,6 @@ script: bash ./test-me.sh
 env:
   - OPTIMIZE=0
   - OPTIMIZE=1
+addons:
+  packages:
+    - python3
