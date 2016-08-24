@@ -51,6 +51,7 @@ Completed
 | ------- | -------------- |
 | bzoj\_1001 | Planar Graph Min-Cut by Shortest Path |
 | bzoj\_1003 | Shortest Path, Dynamic Programming |
+| bzoj\_1012\_binpart | Binary partitioning |
 | bzoj\_1012\_sgt | Segment Trees |
 | bzoj\_2132 | Min-Cut |
 | bzoj\_2588 | Chair Trees, Repeated Doubling LCA |
