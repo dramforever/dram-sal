@@ -17,7 +17,8 @@ FILE(GLOB snippets RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/src"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
 
 
-SET (count 1)
+SET (count 0)
+SET (count_test 0)
 FOREACH (sp ${snippets})
     MATH (EXPR count "${count} + 1")
     STRING(REGEX REPLACE ".cpp" "" sp "${sp}")
@@ -29,6 +30,7 @@ FOREACH (sp ${snippets})
     ENDIF ()
     FILE(GLOB tests "${CMAKE_CURRENT_SOURCE_DIR}/data/${sp}/*.in")
     FOREACH (inFile ${tests})
+        MATH (EXPR count_test "${count_test} + 1")
         STRING(REPLACE ".in" ".out" outFile "${inFile}")
         IF (EXISTS ${outFile})
         ELSE ()
@@ -41,3 +43,5 @@ FOREACH (sp ${snippets})
 ENDFOREACH ()
 
 MESSAGE (STATUS "Found ${count} programs")
+MESSAGE (STATUS "Found ${count_test} tests")
+
