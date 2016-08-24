@@ -42,7 +42,7 @@ def testing(*progs):
             for prog_name in progs:
                 pre_output = runner(prog_name, inp)
                 if pre_output is None:
-                    print('[  **  ] %s: %s failed on' % (func.__name__, prog_name, i + 1))
+                    print('[  **  ] %s: %s failed on %d' % (func.__name__, prog_name, i + 1))
                     has_failure = True
                     cur_failure = True
                 else:
