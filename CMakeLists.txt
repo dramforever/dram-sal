@@ -16,9 +16,11 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall ${EXTRA_FLAGS} -DLOCAL")
 FILE(GLOB snippets RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/src"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
 
+
+SET (count 1)
 FOREACH (sp ${snippets})
+    MATH (EXPR count "${count} + 1")
     STRING(REGEX REPLACE ".cpp" "" sp "${sp}")
-    MESSAGE(STATUS "Found ${sp}")
     IF (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data/${sp}/grader.cpp")
         ADD_EXECUTABLE(${sp} src/${sp}.cpp data/${sp}/grader.cpp)
         SET_SOURCE_FILES_PROPERTIES(src/${sp}.cpp PROPERTIES COMPILE_FLAGS -I${CMAKE_CURRENT_SOURCE_DIR}/data/${sp})
@@ -37,3 +39,5 @@ FOREACH (sp ${snippets})
         ADD_TEST("${sp}.${testId}" bash "${CMAKE_CURRENT_SOURCE_DIR}/judge.sh" "${sp}" "${inFile}" "${outFile}" "${CMAKE_CURRENT_SOURCE_DIR}/filter.py")
     ENDFOREACH ()
 ENDFOREACH ()
+
+MESSAGE (STATUS "Found ${count} programs")
