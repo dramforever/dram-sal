@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 if [ x$1 == x -o x$2 == x -o x$3 == x -o x$4 == x ]; then
     echo "Wrong usage"
     exit -1
@@ -13,10 +15,10 @@ if ! time ./$1 <$2 >${OUTPUT}; then
 fi
 
 FILTERED_OUT=filtered.$$.out
-python $4 <${OUTPUT} >${FILTERED_OUT}
+python3 $4 <${OUTPUT} >${FILTERED_OUT}
 
 FILTERED_STD=filtered.$$.std
-python $4 <$3 >${FILTERED_STD}
+python3 $4 <$3 >${FILTERED_STD}
 
 if diff -u ${FILTERED_STD} ${FILTERED_OUT}; then
     rm ${OUTPUT}

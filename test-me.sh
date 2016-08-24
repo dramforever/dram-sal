@@ -1,7 +1,11 @@
 #!/bin/bash
-rm -rf build || exit 1
-mkdir build/ || exit 1
-cd build/ || exit 1
-cmake -DOPTIMIZE=$OPTIMIZE .. || exit 1
-make || exit 1
-ctest --output-on-failure || exit 1
+set -e
+rm -rf build
+mkdir build/
+cd build/
+cmake -DOPTIMIZE=$OPTIMIZE ..
+make -j
+ulimit -s unlimited
+ctest -j4 --output-on-failure
+cd ..
+python3 match.py

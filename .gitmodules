@@ -1,0 +1,3 @@
+[submodule "pydatagen"]
+	path = pydatagen
+	url = https://github.com/ht35268/pydatagen

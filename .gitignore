@@ -6,3 +6,4 @@ build/
 Testing
 *.swp
 *.swo
+__pycache__/
