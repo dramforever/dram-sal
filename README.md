@@ -56,6 +56,8 @@ Completed
 | bzoj_4516 | Suffix Automaton |
 | bzoj_4569 | Union/find Sets |
 | bzoj_4571 | Chair Trees |
+| bzoj_3673 | Union/find Sets over Binary Tree based Persistent Arrays |
+| bzoj_3673 | Union/find Sets over Binary Tree based Persistent Arrays |
 | poj_1185 | POJ 1185 | State Compressed Dynamic Programming |
 
 License
