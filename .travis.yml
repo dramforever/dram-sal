@@ -1,6 +1,6 @@
 sudo: false
 language: cpp
-python: "2.7"
+python: "3.4"
 script: bash ./test-me.sh
 env:
   - OPTIMIZE=0
