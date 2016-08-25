@@ -1,7 +1,10 @@
 sudo: false
 language: cpp
-python: "3.4"
 script: bash ./test-me.sh
 env:
   - OPTIMIZE=0
   - OPTIMIZE=1
+addons:
+  apt:
+    packages:
+      - python3.4
