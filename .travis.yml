@@ -1,5 +1,7 @@
 sudo: false
-language: cpp
+language: python
+python:
+  - 3.4
 script: bash ./test-me.sh
 env:
   - OPTIMIZE=0
@@ -7,4 +9,4 @@ env:
 addons:
   apt:
     packages:
-      - python3.4
+      - cmake
