@@ -60,7 +60,7 @@ Completed
 | bzoj\_4516 | Suffix Automaton |
 | bzoj\_4569 | Union/find Sets |
 | bzoj\_4571 | Chair Trees |
-| poj\_1185 | POJ 1185 | State Compressed Dynamic Programming |
+| poj\_1185 | State Compressed Dynamic Programming |
 
 License
 -------
