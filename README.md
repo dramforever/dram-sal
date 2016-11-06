@@ -63,6 +63,7 @@ Completed
 | poj\_1185 | State Compressed Dynamic Programming |
 | sudoku | (Score = 90) Brute Force |
 | landlords | Mostly Brute Force |
+| mayan | Brute Force |
 
 License
 -------
