@@ -45,6 +45,15 @@ Completed
 | splay | HDU 3487 | Splay Trees |
 | treap | BZOJ 1588 | No-rotate Treap |
 
+### Pre-NOIP List
+
+| Problem | Source | Initial Score | Final Score | Algorithm |
+| ------- | ------ | ------------- | ----------- | --------- |
+| sudoku | NOIP 2009 | 90 | 90 | Brute Force |
+| landlords | NOIP 2014 | -- | 100 | Mostly Brute Force |
+| mayan | NOIP 2011 | 100 | 100 | Brute Force |
+| water | NOIP 2010 | 90 | 100 | Flood Fill + Greedy |
+
 ### Other
 
 | Problem | Algorithm used |
@@ -61,9 +70,6 @@ Completed
 | bzoj\_4569 | Union/find Sets |
 | bzoj\_4571 | Chair Trees |
 | poj\_1185 | State Compressed Dynamic Programming |
-| sudoku | (Score = 90) Brute Force |
-| landlords | Mostly Brute Force |
-| mayan | Brute Force |
 
 License
 -------
