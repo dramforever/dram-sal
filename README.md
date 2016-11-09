@@ -54,6 +54,7 @@ Completed
 | mayan | NOIP 2011 | 100 | 100 | Brute Force |
 | water | NOIP 2010 | 90 | 100 | Flood Fill + Greedy |
 | social | NOI 2007 | -- | -- | Floyd with tracking |
+| campfire | NOIP 2009 | 100 | 100 | (Ad-hoc) |
 
 ### Other
 
