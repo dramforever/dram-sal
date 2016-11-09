@@ -53,6 +53,7 @@ Completed
 | landlords | NOIP 2014 | -- | 100 | Mostly Brute Force |
 | mayan | NOIP 2011 | 100 | 100 | Brute Force |
 | water | NOIP 2010 | 90 | 100 | Flood Fill + Greedy |
+| social | NOI 2007 | -- | -- | Floyd with tracking |
 
 ### Other
 
