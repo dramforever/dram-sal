@@ -44,6 +44,7 @@ Completed
 | sa | UOJ 35 | Suffix Array |
 | splay | HDU 3487 | Splay Trees |
 | treap | BZOJ 1588 | No-rotate Treap |
+| qtree | SPOJ QTREE | Heavy-light Decomposition |
 
 ### Pre-NOIP List
 
