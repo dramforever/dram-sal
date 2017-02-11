@@ -73,6 +73,7 @@ Completed
 | bzoj\_4569 | Union/find Sets |
 | bzoj\_4571 | Chair Trees |
 | poj\_1185 | State Compressed Dynamic Programming |
+| worm | Ad-hoc Dynamic Programming |
 
 License
 -------
