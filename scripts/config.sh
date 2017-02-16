@@ -14,6 +14,8 @@ do
     fi
 
     cat > build/${name}/Makefile <<END
+include $(readlink -f Makefile.config)
+
 ${name}: $(readlink -f src/${name}.cpp)
 	\$(LINK.cpp) $^ \$(LOADLIBES) \$(LDLIBS) -I . $extra -o \$@
 END
