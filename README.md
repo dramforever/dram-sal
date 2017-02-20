@@ -19,12 +19,10 @@ How to test
 -----------
 
 ```
-cd path/to/repo
-mkdir build
-cd build
-cmake ..
+cd /path/to/repo
 make
-ctest
+cd build/<Problem name>
+make
 ```
 
 Completed
