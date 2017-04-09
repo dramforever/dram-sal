@@ -4,7 +4,7 @@
 #include <vector>
 #include <utility>
 using namespace std;
-const int zS = 3000000;
+const int zS = 300000;
 
 typedef pair<int, int> Edge;
 typedef vector<Edge>::iterator Iter;
@@ -155,7 +155,7 @@ void Graph::distribute (int t, int from)
 
 int main ()
 {
-    freopen ("in.txt", "r", stdin);
+    //freopen ("in.txt", "r", stdin);
     int N, M, Q;
     scanf ("%d%d%d", &N, &M, &Q);
     for (int i = 1; i <= M; i ++)
