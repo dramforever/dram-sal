@@ -1,0 +1,27 @@
+{
+    "version": "0.1.0",
+    "command": "dbt",
+    "isShellCommand": true,
+    "args": ["${fileBasenameNoExtension}"],
+    "showOutput": "never",
+    "tasks": [
+        {
+            "taskName": "build",
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error|note):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "taskName": "test"
+        }
+    ]
+}

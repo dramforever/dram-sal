@@ -15,15 +15,21 @@ Hierarchy of files
 - `misc`
   - `misc-snippet.cpp`
 
-How to test
------------
+How to run
+----------
+
+This is what I do:
 
 ```
 cd /path/to/repo
-make
-cd build/<Problem name>
-make
+stack dbt.hs # Build the dbt builder
+dbt <problem-name>
+build/<problem-name>/<problem-name>.exe
 ```
+
+A VSCode tasks.json is provided.
+
+If you don't like this, just run files as you normally would.
 
 Completed
 ---------

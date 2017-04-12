@@ -1,3 +1,5 @@
+/// -Ivendor/king
+/// vendor/king/grader.cpp
 #include <vector>
 
 #include "king.h"
