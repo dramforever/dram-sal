@@ -7,3 +7,5 @@
 | 4.11 | Google foobar | Tutte 矩阵做一般图最大匹配（并不输出方案）||
 | 4.12 | bzoj_1293 | I don't know ||
 | 4.12 | bzoj_1298 | I don't know ||
+| 4.17 | bzoj_1497 | 最小割 ||
+| 4.17 | bzoj_1565 | 最小割 | 看错范围数组开小 x1 （二维的 QAQ） |
